@@ -80,7 +80,6 @@ export class ConnexionComponent {
          
         },
         (error) => {
-          this.connexionService.estConnecte = true;
           if(error.status === 500){
             console.log('username ou password incorrect');
             this.compteDeja = false;
