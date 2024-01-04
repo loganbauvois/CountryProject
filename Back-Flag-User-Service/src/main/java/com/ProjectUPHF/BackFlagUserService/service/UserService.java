@@ -74,7 +74,7 @@ public class UserService {
     }
 
     public List<User> getClassement() {
-        List<User> list = userRepository.findTop10ByOrderByScoreAsc();
+        List<User> list = userRepository.findTop10ByOrderByScoreDesc();
         list.forEach(x -> x.setPassword(null));
         System.out.println(list);
         return list;
