@@ -41,7 +41,12 @@ public class UserController {
         if(user.getPassword().equals(password)){
             return true;
         }else return false;
+    }
 
+    @GetMapping("/classement")
+    public List<UserDto> getClassement(){
+        final List<User> list = userService.getClassement();
+        return list.stream().map(userMapper::toDto).toList();
     }
 
     @GetMapping("/scoreUpdate")

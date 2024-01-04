@@ -5,6 +5,7 @@ import com.ProjectUPHF.BackFlagUserService.entity.User;
 import com.ProjectUPHF.BackFlagUserService.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -70,5 +71,13 @@ public class UserService {
             u.setScore(score);
             userRepository.save(u);
         }
+    }
+
+    public List<User> getClassement() {
+        List<User> list = userRepository.findTop10ByOrderByScoreAsc();
+        list.forEach(x -> x.setPassword(null));
+        System.out.println(list);
+        return list;
+
     }
 }

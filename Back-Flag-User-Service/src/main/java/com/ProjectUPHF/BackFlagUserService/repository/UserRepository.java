@@ -12,4 +12,5 @@ import java.util.List;
 @RepositoryRestResource(exported = false)
 public interface UserRepository extends MongoRepository<User, ObjectId> {
     User findByUsername(String username);
+    List<User> findTop10ByOrderByScoreAsc();
 }
