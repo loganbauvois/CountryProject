@@ -1,0 +1,19 @@
+
+<p>score : {{this.score}}</p>
+<img [src]="imageUrl" alt="Image">
+<div class="answer-container">
+<form (submit)="onSubmit()">
+
+    
+
+        <input placeholder="Pays" [(ngModel)]="answer" (keyup)="onKeyUp($event)" name="countryInput"> 
+        <div class="scrollable-container" *ngIf="proposition">
+        <ul>
+            <li *ngFor="let country of filteredCountries" ><button class="choix" (click)="choisirMot(country)">{{ country }}</button></li>
+        </ul>
+        </div>
+    <button class="sub" type="submit">Valider</button>
+
+</form>
+</div>
+
