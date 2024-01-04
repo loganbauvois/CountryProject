@@ -44,6 +44,12 @@ public class UserController {
 
     }
 
+    @GetMapping("/scoreUpdate")
+    public ResponseEntity<Void> checkResponse(@RequestParam(required = true) String username, @RequestParam(required = true) Integer score){
+        userService.updateScore(username, score);
+        return ResponseEntity.ok().build();
+    }
+
     @PostMapping
     public ResponseEntity<?> createUser(@RequestBody UserCreationRequest request) {
         final User user = userService.create(request);

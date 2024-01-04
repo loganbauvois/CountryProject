@@ -49,14 +49,13 @@ public class CountryService {
             return false;
         } else {
             Boolean res = Objects.equals(temp.get().getNom(), nom);
-            String url = "http://localhost:8082/votre-endpoint";
-            UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
-                    .queryParam("username", username)
-                    .queryParam("score", score)
-                    .queryParam("res", res);
-
-            ResponseEntity<String> x = restTemplate.getForEntity(builder.toUriString(), String.class);
-            System.out.println(x);
+            if (res) {
+                String url = "http://localhost:8080/Users/scoreUpdate";
+                UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
+                        .queryParam("username", username)
+                        .queryParam("score", score);
+                ResponseEntity<String> x = restTemplate.getForEntity(builder.toUriString(), String.class);
+            }
             return res;
         }
     }

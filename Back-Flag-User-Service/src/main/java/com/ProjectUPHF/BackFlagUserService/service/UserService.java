@@ -61,4 +61,13 @@ public class UserService {
     public void deleteAllUsers() {
         userRepository.deleteAll();
     }
+
+    public void updateScore(String username, Integer score) {
+        final User u = userRepository.findByUsername(username);
+        if (u == null) return ;
+        if (score > u.getScore()){
+            u.setScore(score);
+            userRepository.save(u);
+        }
+    }
 }
