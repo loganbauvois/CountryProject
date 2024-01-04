@@ -1,0 +1,14 @@
+<div class="body">
+    <div class="login-container">
+        <h2>Connexion</h2>
+        <form (submit)="onSubmit()" >
+            <p class="erreur" *ngIf="compteDeja">Username déja utilisé</p>
+            <p class="erreur" *ngIf="entrezQQC">Entrez des données dans tous les champs</p>
+            <p class="erreur" *ngIf="usermdpincorrect">username ou password incorrect</p>
+            <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" [(ngModel)]="username" required>        
+            <input type="password" id="password" name="password" placeholder="Mot de passe" [(ngModel)]="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <button (click)="createUser()">S'inscrire</button>
+    </div>
+</div>

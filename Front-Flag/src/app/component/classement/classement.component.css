@@ -1,0 +1,46 @@
+.bulle {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Pour centrer la bulle */
+.bulle {
+    position: absolute;
+    top: 55px;
+    left: 40%;
+    padding: 20px;
+    padding: 30px;
+}
+
+
+
+.bulle h2 {
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style des éléments de la liste */
+ul li {
+    margin: 5px 0;
+    color: black;
+    /* Couleur du texte en noir */
+    font-size: 16px;
+    text-align: center;
+    /* Taille de la police */
+    /* Autres styles que vous pouvez ajuster selon vos préférences */
+    /* par exemple: */
+    /* background-color: #f7f7f7; */
+    /* border-radius: 5px; */
+    /* padding: 8px; */
+}

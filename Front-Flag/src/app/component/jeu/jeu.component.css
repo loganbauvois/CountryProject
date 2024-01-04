@@ -1,0 +1,75 @@
+img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.answer-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    padding: 30px;
+}
+input[type="text"],
+input[name="countryInput"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.sub {
+    background-color: #357efc;
+    color: white;
+    cursor: pointer;
+}
+
+.sub:hover {
+    background-color: #1f4d9c;
+}
+
+.choix {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 0cm;
+    border: none;
+}
+
+.choix:hover {
+    background-color: #828aff;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+.scrollable-container {
+    position: absolute;
+    width: 345px;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+    /* Ajoute une bordure pour mieux visualiser la zone scrollable */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles pour les éléments de la liste */
+ul li {
+    margin: 0px 0;
+}
+li {
+    margin: 0px 0;
+    padding: 0px;
+}

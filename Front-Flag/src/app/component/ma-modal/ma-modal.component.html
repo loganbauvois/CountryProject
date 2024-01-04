@@ -1,0 +1,9 @@
+<div class="bulle">
+    <form (submit)="onSubmit()">
+        <h2>Nouveaux compte</h2>
+        <p class="erreur"  *ngIf="entrezQQC2">Entrez des données dans tous les champs</p>
+        <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" [(ngModel)]="username" required>
+        <input type="password" id="password" name="password" placeholder="Mot de passe" [(ngModel)]="password" required>
+        <button type="submit">Modifier</button>
+    </form>
+</div>
