@@ -14,7 +14,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserService {
 
-    @Autowired
     private final UserRepository userRepository;
 
     public User create(UserCreationRequest request) {

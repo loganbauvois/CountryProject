@@ -1,12 +1,18 @@
 package org.uphf.countriesservice.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 @Getter
 @Builder
-public class CountryDto {
+@AllArgsConstructor
+@NoArgsConstructor
+public class CountryDto implements Serializable {
     @Schema(
         description = "ID Country",
         example = "153230865742666bbb666221"

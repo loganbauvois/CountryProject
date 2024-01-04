@@ -31,6 +31,16 @@ services:
     depends_on:
       - mongo-db
 
+  front:
+    build:
+      context: ./Front-Flag
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - ms-user
+      - ms-countries
+
 volumes:
   db-user:
   db-countries:

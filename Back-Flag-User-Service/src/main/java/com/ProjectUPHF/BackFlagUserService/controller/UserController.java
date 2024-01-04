@@ -24,7 +24,6 @@ public class UserController {
     @Autowired
     private final UserService userService;
 
-    @Autowired
     private final UserMapper userMapper;
 
     @GetMapping
@@ -38,9 +37,8 @@ public class UserController {
     @GetMapping("/{username}/{password}")
     public boolean getUserByName(@PathVariable("username") String username, @PathVariable("password") String password) {
         final User user = userService.getUserByName(username);
-        if(user.getPassword().equals(password)){
-            return true;
-        }else return false;
+        if (user == null) return false;
+        return user.getPassword().equals(password);
     }
 
     @GetMapping("/classement")

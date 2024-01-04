@@ -1,0 +1,762 @@
+[
+  {
+    "nom" : "Andorre",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Andorre.png"
+  },
+  {
+    "nom" : "Émirats arabes unis",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Émirats%20arabes%20unis.png"
+  },
+  {
+    "nom" : "Afghanistan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Afghanistan.png"
+  },
+  {
+    "nom" : "Antigua-et-Barbuda",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Antigua-et-Barbuda.png"
+  },
+  {
+    "nom" : "Albanie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Albanie.png"
+  },
+  {
+    "nom" : "Arménie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Arménie.png"
+  },
+  {
+    "nom" : "Angola",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Angola.png"
+  },
+  {
+    "nom" : "Argentine",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Argentine.png"
+  },
+  {
+    "nom" : "Autriche",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Autriche.png"
+  },
+  {
+    "nom" : "Australie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Australie.png"
+  },
+  {
+    "nom" : "Azerbaïdjan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Azerbaïdjan.png"
+  },
+  {
+    "nom" : "Bosnie-Herzégovine",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bosnie-Herzégovine.png"
+  },
+  {
+    "nom" : "Barbade",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Barbade.png"
+  },
+  {
+    "nom" : "Bangladesh",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bangladesh.png"
+  },
+  {
+    "nom" : "Belgique",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Belgique.png"
+  },
+  {
+    "nom" : "Burkina Faso",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Burkina%20Faso.png"
+  },
+  {
+    "nom" : "Bulgarie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bulgarie.png"
+  },
+  {
+    "nom" : "Bahreïn",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bahreïn.png"
+  },
+  {
+    "nom" : "Burundi",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Burundi.png"
+  },
+  {
+    "nom" : "Bénin",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bénin.png"
+  },
+  {
+    "nom" : "Brunéi",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Brunéi.png"
+  },
+  {
+    "nom" : "Bolivie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bolivie.png"
+  },
+  {
+    "nom" : "Brésil",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Brésil.png"
+  },
+  {
+    "nom" : "Bahamas",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bahamas.png"
+  },
+  {
+    "nom" : "Bhoutan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bhoutan.png"
+  },
+  {
+    "nom" : "Botswana",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Botswana.png"
+  },
+  {
+    "nom" : "Biélorussie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Biélorussie.png"
+  },
+  {
+    "nom" : "Belize",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Belize.png"
+  },
+  {
+    "nom" : "Canada",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Canada.png"
+  },
+  {
+    "nom" : "République démocratique du Congo",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20démocratique%20du%20Congo.png"
+  },
+  {
+    "nom" : "République centrafricaine",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20centrafricaine.png"
+  },
+  {
+    "nom" : "République du Congo",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20du%20Congo.png"
+  },
+  {
+    "nom" : "Suisse",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suisse.png"
+  },
+  {
+    "nom" : "Côte d'Ivoire",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Côte%20d'Ivoire.png"
+  },
+  {
+    "nom" : "Chili",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chili.png"
+  },
+  {
+    "nom" : "Cameroun",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cameroun.png"
+  },
+  {
+    "nom" : "Chine",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chine.png"
+  },
+  {
+    "nom" : "Colombie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Colombie.png"
+  },
+  {
+    "nom" : "Costa Rica",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Costa%20Rica.png"
+  },
+  {
+    "nom" : "Cuba",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cuba.png"
+  },
+  {
+    "nom" : "Cap-Vert",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cap-Vert.png"
+  },
+  {
+    "nom" : "Chypre",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chypre.png"
+  },
+  {
+    "nom" : "Tchéquie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tchéquie.png"
+  },
+  {
+    "nom" : "Allemagne",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Allemagne.png"
+  },
+  {
+    "nom" : "Djibouti",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Djibouti.png"
+  },
+  {
+    "nom" : "Danemark",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Danemark.png"
+  },
+  {
+    "nom" : "Dominique",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Dominique.png"
+  },
+  {
+    "nom" : "République dominicaine",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20dominicaine.png"
+  },
+  {
+    "nom" : "Algérie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Algérie.png"
+  },
+  {
+    "nom" : "Équateur",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Équateur.png"
+  },
+  {
+    "nom" : "Estonie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Estonie.png"
+  },
+  {
+    "nom" : "Égypte",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Égypte.png"
+  },
+  {
+    "nom" : "Érythrée",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Érythrée.png"
+  },
+  {
+    "nom" : "Espagne",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Espagne.png"
+  },
+  {
+    "nom" : "Éthiopie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Éthiopie.png"
+  },
+  {
+    "nom" : "Finlande",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Finlande.png"
+  },
+  {
+    "nom" : "Fidji",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Fidji.png"
+  },
+  {
+    "nom" : "France",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/France.png"
+  },
+  {
+    "nom" : "Gabon",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Gabon.png"
+  },
+  {
+    "nom" : "Royaume-Uni",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Royaume-Uni.png"
+  },
+  {
+    "nom" : "Grenade",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Grenade.png"
+  },
+  {
+    "nom" : "Géorgie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Géorgie.png"
+  },
+  {
+    "nom" : "Ghana",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ghana.png"
+  },
+  {
+    "nom" : "Gambie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Gambie.png"
+  },
+  {
+    "nom" : "Guinée",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée.png"
+  },
+  {
+    "nom" : "Guinée équatoriale",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée%20équatoriale.png"
+  },
+  {
+    "nom" : "Grèce",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Grèce.png"
+  },
+  {
+    "nom" : "Guatemala",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guatemala.png"
+  },
+  {
+    "nom" : "Guinée-Bissau",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée-Bissau.png"
+  },
+  {
+    "nom" : "Guyana",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guyana.png"
+  },
+  {
+    "nom" : "Honduras",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Honduras.png"
+  },
+  {
+    "nom" : "Croatie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Croatie.png"
+  },
+  {
+    "nom" : "Haïti",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Haïti.png"
+  },
+  {
+    "nom" : "Hongrie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Hongrie.png"
+  },
+  {
+    "nom" : "Indonésie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Indonésie.png"
+  },
+  {
+    "nom" : "Irlande",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Irlande.png"
+  },
+  {
+    "nom" : "Israël",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Israël.png"
+  },
+  {
+    "nom" : "Inde",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Inde.png"
+  },
+  {
+    "nom" : "Irak",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Irak.png"
+  },
+  {
+    "nom" : "Iran",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Iran.png"
+  },
+  {
+    "nom" : "Islande",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Islande.png"
+  },
+  {
+    "nom" : "Italie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Italie.png"
+  },
+  {
+    "nom" : "Jamaïque",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Jamaïque.png"
+  },
+  {
+    "nom" : "Jordanie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Jordanie.png"
+  },
+  {
+    "nom" : "Japon",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Japon.png"
+  },
+  {
+    "nom" : "Kenya",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kenya.png"
+  },
+  {
+    "nom" : "Kirghizistan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kirghizistan.png"
+  },
+  {
+    "nom" : "Cambodge",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cambodge.png"
+  },
+  {
+    "nom" : "Kiribati",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kiribati.png"
+  },
+  {
+    "nom" : "Comores",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Comores.png"
+  },
+  {
+    "nom" : "Saint-Christophe-et-Niévès",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Christophe-et-Niévès.png"
+  },
+  {
+    "nom" : "Corée du Nord",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Corée%20du%20Nord.png"
+  },
+  {
+    "nom" : "Corée du Sud",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Corée%20du%20Sud.png"
+  },
+  {
+    "nom" : "Koweït",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Koweït.png"
+  },
+  {
+    "nom" : "Kazakhstan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kazakhstan.png"
+  },
+  {
+    "nom" : "Laos",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Laos.png"
+  },
+  {
+    "nom" : "Liban",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Liban.png"
+  },
+  {
+    "nom" : "Sainte-Lucie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sainte-Lucie.png"
+  },
+  {
+    "nom" : "Liechtenstein",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Liechtenstein.png"
+  },
+  {
+    "nom" : "Sri Lanka",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sri%20Lanka.png"
+  },
+  {
+    "nom" : "Libéria",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Libéria.png"
+  },
+  {
+    "nom" : "Lesotho",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lesotho.png"
+  },
+  {
+    "nom" : "Lituanie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lituanie.png"
+  },
+  {
+    "nom" : "Luxembourg",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Luxembourg.png"
+  },
+  {
+    "nom" : "Lettonie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lettonie.png"
+  },
+  {
+    "nom" : "Libye",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Libye.png"
+  },
+  {
+    "nom" : "Maroc",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maroc.png"
+  },
+  {
+    "nom" : "Monaco",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Monaco.png"
+  },
+  {
+    "nom" : "Moldavie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Moldavie.png"
+  },
+  {
+    "nom" : "Monténégro",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Monténégro.png"
+  },
+  {
+    "nom" : "Madagascar",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Madagascar.png"
+  },
+  {
+    "nom" : "Macédoine du Nord",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Macédoine%20du%20Nord.png"
+  },
+  {
+    "nom" : "Mali",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mali.png"
+  },
+  {
+    "nom" : "Myanmar",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Myanmar.png"
+  },
+  {
+    "nom" : "Mongolie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mongolie.png"
+  },
+  {
+    "nom" : "Mauritanie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mauritanie.png"
+  },
+  {
+    "nom" : "Malte",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malte.png"
+  },
+  {
+    "nom" : "Maurice",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maurice.png"
+  },
+  {
+    "nom" : "Maldives",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maldives.png"
+  },
+  {
+    "nom" : "Malawi",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malawi.png"
+  },
+  {
+    "nom" : "Mexique",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mexique.png"
+  },
+  {
+    "nom" : "Malaisie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malaisie.png"
+  },
+  {
+    "nom" : "Mozambique",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mozambique.png"
+  },
+  {
+    "nom" : "Namibie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Namibie.png"
+  },
+  {
+    "nom" : "Niger",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Niger.png"
+  },
+  {
+    "nom" : "Nigéria",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nigéria.png"
+  },
+  {
+    "nom" : "Nicaragua",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nicaragua.png"
+  },
+  {
+    "nom" : "Pays-Bas",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pays-Bas.png"
+  },
+  {
+    "nom" : "Norvège",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Norvège.png"
+  },
+  {
+    "nom" : "Népal",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Népal.png"
+  },
+  {
+    "nom" : "Nauru",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nauru.png"
+  },
+  {
+    "nom" : "Nouvelle-Zélande",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nouvelle-Zélande.png"
+  },
+  {
+    "nom" : "Oman",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Oman.png"
+  },
+  {
+    "nom" : "Panama",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Panama.png"
+  },
+  {
+    "nom" : "Pérou",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pérou.png"
+  },
+  {
+    "nom" : "Papouasie-Nouvelle-Guinée",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Papouasie-Nouvelle-Guinée.png"
+  },
+  {
+    "nom" : "Philippines",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Philippines.png"
+  },
+  {
+    "nom" : "Pakistan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pakistan.png"
+  },
+  {
+    "nom" : "Pologne",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pologne.png"
+  },
+  {
+    "nom" : "Portugal",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Portugal.png"
+  },
+  {
+    "nom" : "Palaos",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Palaos.png"
+  },
+  {
+    "nom" : "Paraguay",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Paraguay.png"
+  },
+  {
+    "nom" : "Qatar",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Qatar.png"
+  },
+  {
+    "nom" : "Roumanie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Roumanie.png"
+  },
+  {
+    "nom" : "Serbie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Serbie.png"
+  },
+  {
+    "nom" : "Russie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Russie.png"
+  },
+  {
+    "nom" : "Rwanda",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Rwanda.png"
+  },
+  {
+    "nom" : "Arabie saoudite",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Arabie%20saoudite.png"
+  },
+  {
+    "nom" : "Îles Salomon",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Îles%20Salomon.png"
+  },
+  {
+    "nom" : "Seychelles",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Seychelles.png"
+  },
+  {
+    "nom" : "Soudan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Soudan.png"
+  },
+  {
+    "nom" : "Suède",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suède.png"
+  },
+  {
+    "nom" : "Singapour",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Singapour.png"
+  },
+  {
+    "nom" : "Slovénie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Slovénie.png"
+  },
+  {
+    "nom" : "Slovaquie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Slovaquie.png"
+  },
+  {
+    "nom" : "Sierra Leone",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sierra%20Leone.png"
+  },
+  {
+    "nom" : "Saint-Marin",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Marin.png"
+  },
+  {
+    "nom" : "Sénégal",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sénégal.png"
+  },
+  {
+    "nom" : "Somalie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Somalie.png"
+  },
+  {
+    "nom" : "Suriname",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suriname.png"
+  },
+  {
+    "nom" : "Soudan du Sud",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Soudan%20du%20Sud.png"
+  },
+  {
+    "nom" : "Sao Tomé-et-Principe",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sao%20Tomé-et-Principe.png"
+  },
+  {
+    "nom" : "Salvador",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Salvador.png"
+  },
+  {
+    "nom" : "Syrie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Syrie.png"
+  },
+  {
+    "nom" : "Eswatini",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Eswatini.png"
+  },
+  {
+    "nom" : "Tchad",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tchad.png"
+  },
+  {
+    "nom" : "Togo",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Togo.png"
+  },
+  {
+    "nom" : "Thaïlande",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Thaïlande.png"
+  },
+  {
+    "nom" : "Tadjikistan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tadjikistan.png"
+  },
+  {
+    "nom" : "Timor-Leste",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Timor-Leste.png"
+  },
+  {
+    "nom" : "Turkménistan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Turkménistan.png"
+  },
+  {
+    "nom" : "Tunisie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tunisie.png"
+  },
+  {
+    "nom" : "Tonga",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tonga.png"
+  },
+  {
+    "nom" : "Turquie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Turquie.png"
+  },
+  {
+    "nom" : "Trinité-et-Tobago",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Trinité-et-Tobago.png"
+  },
+  {
+    "nom" : "Tanzanie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tanzanie.png"
+  },
+  {
+    "nom" : "Ukraine",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ukraine.png"
+  },
+  {
+    "nom" : "Ouganda",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ouganda.png"
+  },
+  {
+    "nom" : "États-Unis d'Amérique",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/États-Unis%20d'Amérique.png"
+  },
+  {
+    "nom" : "Uruguay",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Uruguay.png"
+  },
+  {
+    "nom" : "Ouzbékistan",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ouzbékistan.png"
+  },
+  {
+    "nom" : "Saint-Vincent-et-les-Grenadines",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Vincent-et-les-Grenadines.png"
+  },
+  {
+    "nom" : "Venezuela",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Venezuela.png"
+  },
+  {
+    "nom" : "Vietnam",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Vietnam.png"
+  },
+  {
+    "nom" : "Vanuatu",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Vanuatu.png"
+  },
+  {
+    "nom" : "Samoa",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Samoa.png"
+  },
+  {
+    "nom" : "Yémen",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Yémen.png"
+  },
+  {
+    "nom" : "Afrique du Sud",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Afrique%20du%20Sud.png"
+  },
+  {
+    "nom" : "Zambie",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Zambie.png"
+  },
+  {
+    "nom" : "Zimbabwe",
+    "url" : "https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Zimbabwe.png"
+  }
+]

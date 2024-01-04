@@ -1,8 +1,6 @@
 package org.uphf.countriesservice.service;
 
 import org.bson.types.ObjectId;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -10,7 +8,7 @@ import org.uphf.countriesservice.dto.CountryDto;
 import org.uphf.countriesservice.entities.Country;
 import lombok.RequiredArgsConstructor;
 import org.uphf.countriesservice.exception.NoContent;
-import org.uphf.countriesservice.mapper.CountryMapper;
+import org.uphf.countriesservice.component.CountryMapper;
 import org.springframework.stereotype.Service;
 import org.uphf.countriesservice.repository.CountryRepository;
 
@@ -50,7 +48,7 @@ public class CountryService {
         } else {
             Boolean res = Objects.equals(temp.get().getNom(), nom);
             if (res) {
-                String url = "http://localhost:8080/Users/scoreUpdate";
+                String url = "http://ms-user:8080/Users/scoreUpdate";
                 UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
                         .queryParam("username", username)
                         .queryParam("score", score);

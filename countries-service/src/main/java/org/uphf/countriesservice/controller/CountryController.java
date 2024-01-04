@@ -14,7 +14,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.uphf.countriesservice.exception.NoContent;
-import org.uphf.countriesservice.mapper.CountryMapper;
+import org.uphf.countriesservice.component.CountryMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.uphf.countriesservice.service.CountryService;
