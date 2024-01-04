@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:latest
+    restart: on-failure
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: equipment_service_db
+    volumes:
+      - db:/data/db/
+
+volumes:
+  db:

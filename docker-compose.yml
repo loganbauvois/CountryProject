@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  mongo-db:
+    image: mongo:latest
+    container_name: mongodb
+    restart: on-failure
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: mongo-db
+    volumes:
+      - db-user:/data/dbuser/
+      - db-countries:/data/dbcountries
+
+  ms-user:
+    build:
+      context: ./Back-Flag-User-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo-db
+
+  ms-countries:
+    build:
+      context: ./countries-service
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongo-db
+
+volumes:
+  db-user:
+  db-countries:
