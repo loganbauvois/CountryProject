@@ -72,11 +72,25 @@ On peut modifier un utilisateur avec updateUser :
 
 #### DELETE (0,5 pts)  
 
+On peut supprimer tous les utilisateurs avec un deleteAll :
+- deleteAll : http://localhost/Users
+
+
 ### Swagger UI (2 pts)                                                                                                                           
+
+On a accès au swagger de chaque microservice via les adresses suivantes :
+- ms-countries : http://localhost:8081/swagger-ui/index.html
+- ms-user : http://localhost:8080/swagger-ui/index.html
 
 ### Dockerfile (1 pt)
 
+Chaque microservice ainsi que le projet front Angular sont doté d'un dockerfile permettant pour chcuns d'entre eux de build une image docker.
+
 ### docker-compose.yml (1 pt)
+
+Les deux microservices ont un docker-compose.yml permettant de lancer à la fois l'image docker du microservices et de sa BDD.</br>
+On a également un docker-compose.yml globale qu'il suffit de lancer pour générer ou télécharger toutes les images et les lancer le tous simplement avec la commande docker-compose up.</br>
+Ainsi il ne reste plus qu'à se rendre sur le http://localhost:4200 afin d'afficher le front et d'utiliser l'application complète.
 
 ### Github action (1 pt)
 ### Optimisation (0,5pt)
@@ -84,16 +98,50 @@ On peut modifier un utilisateur avec updateUser :
 
 ## Consumer (4pts)
 
+Le consumer est un front réalisé en angular. Il effectue tous types de requêtes sauf les delete. 
 
 ### Requêtes
+
 #### GET (1 pts)
+
+La requête get est utilisé pour faire les verification au moment de connecter un utilisateur, mais aussi pour permettre laffichages de plusieurs chose sur le site, comme pour obtenir les images à afficher et pour vérifier si la réponse est exacte.
+
 #### POST (2 pts)
+
+Avec la requête post on peut biensur sur le site s'inscrire et donc créer un utilisateur.
+
+#### PUT 
+
+On peut également une fois qu'on est connecté à notre compte modifié notre nom d'utilisateur et notre mot de passe.
 
 ### Dockerfile (1 pt)
 
+Un dockerfil a également été réalisé pour générer une image docker du front. Vous la trouverez à la raçine du projet Front-Flag.
+Pour faire ce dockerfile nous avons utilisé des commandes pré-conçus pour la génération d'image docker sur angular et des didactitiels sur internet.
 
 ## Demo (4pts)
 
 ### docker-compose.yml (1 pt)
+
+Le docker compose à la raçine du projet global où se trouvent les trois projets permet avec simplement la commande </br>
+*docker-compose up* de télécharger toutes les images qui ne sont pas déjà télécharger et de générer celles qui ne le sont pas parmis les microservices et le front,</br>
+puis de les lancer. Ainsi avec simplement *docker-compose up* on a besoin de rien faire d'autre. Même la base de données des pays a été conçu pour se remplire à la première éxecution de l'image pour pouvoir jouer sans avoir à insérer les pays avant.
+
 ### Documentation (1 pt)
+
+C'est ici même.
+
 ### Parcours fonctionnel (2 pt)
+
+1) Ouvrir un terminal à CountryProject
+2) Éxecuter la commande *docker-compose up*
+3) Ouvrir http://localhost:4200/ dans un navigateur
+4) S'inscrire avec un username et un password
+5) Se connecter avec ces même informations
+6) Jouer !
+   1) Vous voyez la forme d'un pays
+   2) Entrez le nom que vous pensez (Selectionez le ans la liste des propositions pour qu'il soit reconnu)
+   3) Validez, si vous avez bon vous gagnez 1 point sinon vous revenez à 0
+   4) Votre meilleur score est enregistré
+   5) Dans classement (au haut au centre) vous voyez les 10 meilleurs joueurs et leur score
+   6) Vous pouvez modifier votre username et password avec le bouton modifier en haut à droite.
