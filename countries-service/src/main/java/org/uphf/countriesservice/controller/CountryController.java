@@ -29,6 +29,7 @@ import java.util.List;
     name = "Country controller",
     description = "API Country"
 )
+@CrossOrigin(origins = "*") // Pour éviter le problème du header CORS
 public class CountryController {
 
     private final CountryService countryService;

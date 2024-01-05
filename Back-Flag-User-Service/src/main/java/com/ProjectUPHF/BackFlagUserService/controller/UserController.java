@@ -24,6 +24,7 @@ import java.util.List;
 @RequestMapping("/Users")
 @Slf4j
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*") // Pour éviter le problème du header CORS
 public class UserController {
 
     private final UserService userService;
