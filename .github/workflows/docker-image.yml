@@ -43,11 +43,22 @@ jobs:
      - name: Build front
        run: docker build "${{ github.workspace }}/Front-Flag/" -t front:latest
 
+     - name: Create & run repo
+       run: |
+         docker pull registry 
+         docker run -d -p 5000:5000 --restart=always --name registry registry
+        
      - name: Push ms-user
-       run: docker push ms-user:latest
+       run: |
+         docker tag ms-user:latest localhost:5000/ms-user:latest
+         docker push localhost:5000/ms-user:latest
 
      - name: Push ms-countries
-       run: docker push ms-countries:latest
+       run: |
+         docker tag ms-countries:latest localhost:5000/ms-countries:latest
+         docker push localhost:5000/ms-countries:latest
 
      - name: Push front
-       run: docker push front:latest
+       run: |
+         docker tag front:latest localhost:5000/front:latest
+         docker push localhost:5000/front:latest
