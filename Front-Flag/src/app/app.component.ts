@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private connexionService: ConnexionService, private router: Router) { }
   afficherModal: boolean = false;
   afficherClassement: boolean = false;
-
+  username: string = this.connexionService.username;
   estConnecte(): boolean {
     return this.connexionService.estConnecte;
   }
@@ -29,8 +29,11 @@ export class AppComponent {
   ouvrirModal(): void {
     if(this.afficherModal == true){
       this.afficherModal = false
+
     }
     else{
+    console.log(this.connexionService.username);
+
       this.afficherModal = true
     }
   }

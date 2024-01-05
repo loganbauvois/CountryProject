@@ -18,11 +18,12 @@ export class JeuComponent {
   constructor(private jeuService: JeuService, private connexionService: ConnexionService, private router: Router, private cdr: ChangeDetectorRef) { }
   username: string = '';
   password: string = '';
-  imageUrl: string | undefined = "https://silhouettegarden.com/files/images//afghanistan-silhouette-thumbnail.png";
+  imageUrl: string | undefined = "";
   id: string = '';
   answer: string = '';
   countryFormControl = new FormControl();
   score: number = 0;
+  scoreBest: number = 0;
   proposition: boolean = false;
   countries: string[] = [
     'Émirats arabes unis', 'Afghanistan', 'Antigua-et-Barbuda', 'Albanie', 'Arménie', 'Angola', 'Argentine', 'Autriche', 'Australie', 'Azerbaïdjan', 'Bosnie-Herzégovine', 'Barbade', 'Bangladesh', 'Belgique', 'Burkina Faso', 'Bulgarie', 'Bahreïn', 'Burundi', 'Bénin', 'Brunéi', 'Bolivie', 'Brésil', 'Bahamas', 'Bhoutan', 'Botswana', 'Biélorussie', 'Belize', 'Canada', 'République démocratique du Congo', 'République centrafricaine', 'République du Congo', 'Suisse', 'Côte d\'Ivoire', 'Chili', 'Cameroun', 'Chine', 'Colombie', 'Costa Rica', 'Cuba', 'Cap-Vert', 'Chypre', 'Tchéquie', 'Allemagne', 'Djibouti', 'Danemark', 'Dominique', 'République dominicaine', 'Algérie', 'Équateur', 'Estonie', 'Égypte', 'Érythrée', 'Espagne', 'Éthiopie', 'Finlande', 'Fidji', 'France', 'Gabon', 'Royaume-Uni', 'Grenade', 'Géorgie', 'Ghana', 'Gambie', 'Guinée', 'Guinée équatoriale', 'Grèce', 'Guatemala', 'Guinée-Bissau', 'Guyana', 'Honduras', 'Croatie', 'Haïti', 'Hongrie', 'Indonésie', 'Irlande', 'Israël', 'Inde', 'Irak', 'Iran', 'Islande', 'Italie', 'Jamaïque', 'Jordanie', 'Japon', 'Kenya', 'Kirghizistan', 'Cambodge', 'Kiribati', 'Comores', 'Saint-Christophe-et-Niévès', 'Corée du Nord', 'Corée du Sud', 'Koweït', 'Kazakhstan', 'Laos', 'Liban', 'Sainte-Lucie', 'Liechtenstein', 'Sri Lanka', 'Libéria', 'Lesotho', 'Lituanie', 'Luxembourg', 'Lettonie', 'Libye', 'Maroc', 'Monaco', 'Moldavie', 'Monténégro', 'Madagascar', 'Macédoine du Nord', 'Mali', 'Myanmar', 'Mongolie', 'Mauritanie', 'Malte', 'Maurice', 'Maldives', 'Malawi', 'Mexique', 'Malaisie', 'Mozambique', 'Namibie', 'Niger', 'Nigéria', 'Nicaragua', 'Pays-Bas', 'Norvège', 'Népal', 'Nauru', 'Nouvelle-Zélande', 'Oman', 'Panama', 'Pérou', 'Papouasie-Nouvelle-Guinée', 'Philippines', 'Pakistan', 'Pologne', 'Portugal', 'Palaos', 'Paraguay', 'Qatar', 'Roumanie', 'Serbie', 'Russie', 'Rwanda', 'Arabie saoudite', 'Îles Salomon', 'Seychelles', 'Soudan', 'Suède', 'Singapour', 'Slovénie', 'Slovaquie', 'Sierra Leone', 'Saint-Marin', 'Sénégal', 'Somalie', 'Suriname', 'Soudan du Sud', 'Sao Tomé-et-Principe', 'Salvador', 'Syrie', 'Eswatini', 'Tchad', 'Togo', 'Thaïlande', 'Tadjikistan', 'Timor-Leste', 'Turkménistan', 'Tunisie', 'Tonga', 'Turquie', 'Trinité-et-Tobago', 'Tanzanie', 'Ukraine', 'Ouganda', 'États-Unis d\'Amérique', 'Uruguay', 'Ouzbékistan', 'Saint-Vincent-et-les-Grenadines', 'Venezuela', 'Vietnam', 'Vanuatu', 'Samoa', 'Yémen', 'Afrique du Sud', 'Zambie', 'Zimbabwe'
@@ -31,6 +32,7 @@ export class JeuComponent {
   onSubmit(){
     
     if (this.answer.trim() !== '' ) {
+
       console.log('Envoie de la reponse');
       console.log(this.answer);
       const rep = {
@@ -44,6 +46,14 @@ export class JeuComponent {
           if(response == true){
             this.score++;
             this.answer = '';
+            this.connexionService.getScore().subscribe(
+                    (response) => {
+                        this.scoreBest = response;
+                    },
+                    (error) => {
+                    console.error(" - ",error)
+                    }
+                  );
             this.jeuService.getQuestion().subscribe(
               (response) => {
                 console.log('Réponse du serveur : ', response);
@@ -106,6 +116,14 @@ export class JeuComponent {
   ngOnInit(): void {
     
     if (this.connexionService.estConnecte){
+      this.connexionService.getScore().subscribe(
+        (response) => {
+            this.scoreBest = response;
+        },
+        (error) => {
+            console.error(" - ",error);
+        }
+      )
       this.jeuService.getQuestion().subscribe(
         (response) => {
           console.log('Réponse du serveur : ', response);
