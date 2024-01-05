@@ -55,7 +55,7 @@ Pour le microservice ms-countries on peut ajouter un pays avec createCountry, ou
 
 - createCountry : http://localhost/countries/ + body
   - body :
-  ```Le body doit être de la forme :
+  ```json
     {
     "nom" : "nom",
     "url" : "url"
