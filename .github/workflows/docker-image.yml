@@ -18,13 +18,10 @@ jobs:
        run: echo ${{github.workspace}}
 
      - name: Build & Push ms-user
-       run: docker build ${{ github.workspace }} -t ms-user:latest
-       working-directory: Back-Flag-User-Service
+       run: docker build -f "${{ github.workspace }}/Back-Flag-User-Service" -t ms-user:latest
 
      - name: Build & Push ms-countries
-       run: docker build ${{ github.workspace }} -t ms-countries:latest
-       working-directory: countries-service
+       run: docker build -f "${{ github.workspace }}/countries-service" -t ms-countries:latest
 
      - name: Build & Push front
-       run: docker build ${{ github.workspace }} -t front:latest
-       working-directory: Front-Flag
+       run: docker build -f "${{ github.workspace }}/Front-Flag/" -t front:latest
