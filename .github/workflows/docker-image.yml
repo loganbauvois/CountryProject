@@ -13,7 +13,7 @@ jobs:
     steps:
      - name: Checkout Repository
        #uses: actions/checkout@v2
-       run: ls -R /var/lib/docker/tmp/buildkit-mount3809330710/
+       run: echo "$PWD"
 
 #     - name: Build & Push ms-user
 #       run: docker build . -t ms-user:latest
