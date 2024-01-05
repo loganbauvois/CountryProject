@@ -12,16 +12,17 @@ jobs:
 
     steps:
      - name: Checkout Repository
-       uses: actions/checkout@v2
+       #uses: actions/checkout@v2
+       run: ls -R /var/lib/docker/tmp/buildkit-mount3809330710/
 
-     - name: Build & Push ms-user
-       run: docker build . -t ms-user:latest
-       working-directory: ./Back-Flag-User-Service
+#     - name: Build & Push ms-user
+#       run: docker build . -t ms-user:latest
+#       working-directory: ./Back-Flag-User-Service
 
-     - name: Build & Push ms-countries
-       run: docker build . -t ms-countries:latest
-       working-directory: ./countries-service
+#     - name: Build & Push ms-countries
+#       run: docker build . -t ms-countries:latest
+#       working-directory: ./countries-service
 
-     - name: Build & Push front
-       run: docker build . -t front:latest
-       working-directory: ./Front-Flag
+#     - name: Build & Push front
+#       run: docker build . -t front:latest
+#       working-directory: ./Front-Flag
