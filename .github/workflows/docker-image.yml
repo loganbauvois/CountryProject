@@ -13,7 +13,7 @@ jobs:
     steps:
      - name: Checkout Repository
        #uses: actions/checkout@v2
-       run: echo "ls -l"
+       run: ls -l
 
      - name: Build & Push ms-user
        run: docker build ${{ github.workspace }} -t ms-user:latest
