@@ -15,7 +15,7 @@ jobs:
        uses: actions/checkout@v2
        
      - name: commande random 
-       run: ls -l
+       run: echo ${{github.workspace}}
 
      - name: Build & Push ms-user
        run: docker build ${{ github.workspace }} -t ms-user:latest
