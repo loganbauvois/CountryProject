@@ -17,12 +17,12 @@ jobs:
 
      - name: Build & Push ms-user
        run: docker build ${{ github.workspace }} -t ms-user:latest
-       working-directory: ./Back-Flag-User-Service
+       working-directory: Back-Flag-User-Service
 
      - name: Build & Push ms-countries
        run: docker build ${{ github.workspace }} -t ms-countries:latest
-       working-directory: ./countries-service
+       working-directory: countries-service
 
      - name: Build & Push front
        run: docker build ${{ github.workspace }} -t front:latest
-       working-directory: ./Front-Flag
+       working-directory: Front-Flag
