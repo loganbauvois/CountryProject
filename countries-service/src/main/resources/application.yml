@@ -14,6 +14,6 @@ springdoc:
 spring:
   data:
     mongodb:
-      host: mongodb
+      host: ${DBHOST:localhost}
       port: 27017
       database: countries-db

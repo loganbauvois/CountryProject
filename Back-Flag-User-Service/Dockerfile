@@ -4,6 +4,8 @@ LABEL authors="theolorthioir"
 
 ENV SERVER_PORT=8080
 
+ENV DBHOST=mongodb
+
 ARG JAR_FILE=target/Back-Flag-User-Service-*.jar
 
 # Ces commandes empêchent l'exécution du Dockerfile sur Mac AppleSilicon

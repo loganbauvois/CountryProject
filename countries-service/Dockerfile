@@ -4,6 +4,8 @@ LABEL authors="theolorthioir"
 
 ENV SERVER_PORT=8081
 
+ENV DBHOST=mongodb
+
 ARG JAR_FILE=target/countries-service-*.jar
 ARG INIT_DB=src/main/resources/initdb.json
 

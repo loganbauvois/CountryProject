@@ -28,7 +28,13 @@ public class InitDB implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         if (countryRepository.findAll().isEmpty()) {
             System.out.println("BDD vide, ajout des données.");
-            File file = new File("./initdb.json");
+            File file;
+            try{
+                file = new File("./initdb.json");
+                if (!file.exists()) throw new Exception();
+            } catch (Exception e){
+                file = new File("./src/main/resources/initdb.json");
+            }
             ObjectMapper objectMapper = new ObjectMapper();
 
             List<CountryDto> countries = Arrays.asList(objectMapper.readValue(file, CountryDto[].class));

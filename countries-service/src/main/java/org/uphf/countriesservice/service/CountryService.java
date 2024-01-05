@@ -48,11 +48,20 @@ public class CountryService {
         } else {
             Boolean res = Objects.equals(temp.get().getNom(), nom);
             if (res) {
-                String url = "http://ms-user:8080/Users/scoreUpdate";
-                UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
-                        .queryParam("username", username)
-                        .queryParam("score", score);
-                ResponseEntity<String> x = restTemplate.getForEntity(builder.toUriString(), String.class);
+                try{
+                    String url = "http://ms-user:8080/Users/scoreUpdate";
+                    UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
+                            .queryParam("username", username)
+                            .queryParam("score", score);
+                    ResponseEntity<String> x = restTemplate.getForEntity(builder.toUriString(), String.class);
+                } catch(Exception e){
+                    String url = "http://localhost:8080/Users/scoreUpdate";
+                    UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
+                            .queryParam("username", username)
+                            .queryParam("score", score);
+                    ResponseEntity<String> x = restTemplate.getForEntity(builder.toUriString(), String.class);
+
+                }
             }
             return res;
         }
