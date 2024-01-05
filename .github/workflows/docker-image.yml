@@ -12,7 +12,9 @@ jobs:
 
     steps:
      - name: Checkout Repository
-       #uses: actions/checkout@v2
+       uses: actions/checkout@v2
+       
+     - name: commande random 
        run: ls -l
 
      - name: Build & Push ms-user
