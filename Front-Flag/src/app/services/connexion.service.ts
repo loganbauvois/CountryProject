@@ -16,7 +16,9 @@ export class ConnexionService {
     return this.http.get<any>('http://localhost:8080/Users/' + username + '/' + password);
     
   }
-
+    getScore(){
+        return this.http.get<any>('http://localhost:8080/Users/score?username=' + this.username );
+    }
   
 
   deconnecter() {

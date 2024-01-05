@@ -33,9 +33,9 @@ public class UserService {
 
     public User update(UserCreationRequest request, String username) {
         User userToUpdate = userRepository.findByUsername(username);
-
+        User user = userRepository.findByUsername(request.getUsername());
         // Vérifier si l'utilisateur existe
-        if (userToUpdate != null) {
+        if (userToUpdate != null && user == null) {
             // Mettre à jour les champs de l'utilisateur avec les valeurs de la requête
             userToUpdate.setUsername(request.getUsername());
             userToUpdate.setPassword(request.getPassword());
@@ -78,5 +78,10 @@ public class UserService {
         System.out.println(list);
         return list;
 
+    }
+
+    public int getScore(String username) {
+        User user = userRepository.findByUsername(username);
+        return user.getScore();
     }
 }

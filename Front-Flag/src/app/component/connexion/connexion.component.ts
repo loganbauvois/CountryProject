@@ -64,6 +64,7 @@ export class ConnexionComponent {
         (response) => {
           console.log('Réponse du serveur : ', response);
           if(response == true){
+
             this.connexionService.estConnecte = true;
             this.connexionService.username = this.username;
             this.username = '';
@@ -86,8 +87,12 @@ export class ConnexionComponent {
             this.usermdpincorrect = true;
             this.entrezQQC = false;
           }
-          
-          
+          if(error.status === 400){
+           console.log('username ou password incorrect');
+                      this.compteDeja = false;
+                      this.usermdpincorrect = true;
+                      this.entrezQQC = false;
+          }
           // Gérer l'erreur ici
         }
       );
