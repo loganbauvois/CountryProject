@@ -15,14 +15,14 @@ jobs:
        #uses: actions/checkout@v2
        run: echo "$PWD"
 
-#     - name: Build & Push ms-user
-#       run: docker build . -t ms-user:latest
-#       working-directory: ./Back-Flag-User-Service
+     - name: Build & Push ms-user
+       run: docker build ${{ github.workspace }} -t ms-user:latest
+       working-directory: ./Back-Flag-User-Service
 
-#     - name: Build & Push ms-countries
-#       run: docker build . -t ms-countries:latest
-#       working-directory: ./countries-service
+     - name: Build & Push ms-countries
+       run: docker build ${{ github.workspace }} -t ms-countries:latest
+       working-directory: ./countries-service
 
-#     - name: Build & Push front
-#       run: docker build . -t front:latest
-#       working-directory: ./Front-Flag
+     - name: Build & Push front
+       run: docker build ${{ github.workspace }} -t front:latest
+       working-directory: ./Front-Flag
