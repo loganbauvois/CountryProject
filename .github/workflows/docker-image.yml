@@ -1,61 +1,59 @@
+### Docker image
 name: Docker Image CI
 
+# Déclenchement au push ou pull request sur main
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
-env:
-  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-
-
+#######
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Machine : Ubuntu, dernière version
 
-    steps:
+    steps:    # Copie du repository github dans la machine virtuelle
      - name: Checkout Repository
        uses: actions/checkout@v2
        
-     - name: Setup JDK 17
+     - name: Setup JDK 17    # Prise en compte du JDK 17 (minimum pour compiler les projets)
        uses: actions/setup-java@v2
        with:
          distribution: 'temurin'
          java-version: '17'
 
-     - name: package ms-user
+     - name: package ms-user      # Package avec Maven du projet back user
        run: cd ./Back-Flag-User-Service && mvn package
        
-     - name: package ms-countries
+     - name: package ms-countries        # Package avec Maven du projet back bdd countries
        run: cd ./countries-service && mvn package
        
-     - name: Build ms-user
+     - name: Build ms-user        # Build de l'image du back user sous le tag ms-user:latest
        run: docker build "${{ github.workspace }}/Back-Flag-User-Service" -t ms-user:latest
 
-     - name: Build ms-countries
+     - name: Build ms-countries         # Build de l'image du back countries sous le tag ms-countries:latest
        run: docker build "${{ github.workspace }}/countries-service" -t ms-countries:latest
 
-     - name: Build front
+     - name: Build front        # Build de l'image du front (le plus long) sous le tag front:latest
        run: docker build "${{ github.workspace }}/Front-Flag/" -t front:latest
 
-     - name: Create & run repo
+     - name: Create & run repo        # Pull d'une image docker de registre, et lancement du container mappé sur le port 5000 
        run: |
          docker pull registry 
          docker run -d -p 5000:5000 --restart=always --name registry registry
         
-     - name: Push ms-user
+     - name: Push ms-user          # Retag de l'image ms-user:latest en localhost:5000/ms-user:latest, et push sur le repo port 5000
        run: |
          docker tag ms-user:latest localhost:5000/ms-user:latest
          docker push localhost:5000/ms-user:latest
 
-     - name: Push ms-countries
+     - name: Push ms-countries        # Retag de l'image ms-countries:latest en localhost:5000/ms-countries:latest, et push sur le repo port 5000
        run: |
          docker tag ms-countries:latest localhost:5000/ms-countries:latest
          docker push localhost:5000/ms-countries:latest
 
-     - name: Push front
+     - name: Push front          # Retag de l'image front:latest en localhost:5000/front:latest, et push sur le repo port 5000
        run: |
          docker tag front:latest localhost:5000/front:latest
          docker push localhost:5000/front:latest
