@@ -1,10 +1,13 @@
 package org.uphf.countriesservice.component;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.uphf.countriesservice.dto.CountryDto;
 import org.uphf.countriesservice.entities.Country;
 import org.springframework.stereotype.Component;
 
 @Component
+@NoArgsConstructor
 public class CountryMapper {
 
     public Country toEntity(CountryDto c){
