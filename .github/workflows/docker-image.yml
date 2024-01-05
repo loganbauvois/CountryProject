@@ -15,7 +15,7 @@ jobs:
        uses: actions/checkout@v2
        
      - name: commande random 
-       run: ls -R .
+       run: mvn --version
 
      - name: package ms-user
        run: cd ./Back-Flag-User-Service && mvn package
