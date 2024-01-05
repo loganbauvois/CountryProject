@@ -17,6 +17,12 @@ jobs:
      - name: commande random 
        run: echo ${{github.workspace}}
 
+     - name: package ms-user
+       run: mvn package -Dmaven.build.directory="${{github.workspace}}/Back-Flag-User-Service"
+       
+     - name: package ms-countries
+       run: mvn package -Dmaven.build.directory="${{github.workspace}}/countries-service"
+       
      - name: Build & Push ms-user
        run: docker build "${{ github.workspace }}/Back-Flag-User-Service" -t ms-user:latest
 
