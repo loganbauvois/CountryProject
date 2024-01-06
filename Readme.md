@@ -20,6 +20,10 @@ La base de donnée mongo s'éxecute sur le port 27017, elle est directement lié
 
 Si les micro-services sont lancés depuis un container Docker, et donc si la variable DBHOST est renseignée dans l'environnement, la connexion s'effectue vers mongodb:// ; sinon vers localhost.
 
+**Concernant le remplissage de la base de données**, toutes les images ont été récupérées depuis un repo github : https://github.com/djaiss/mapsicon. Seuls manquent Tuvalu, les îles Marshall, et la Micronésie aux 193 pays reconnus indépendants par l'ONU. Ces images ont été pour chacunes extraites à l'aide d'un script Python, et réupload sur un dépôt github : https://github.com/Taumicron/CountriesShape.
+
+Ainsi, chaque image est accessible depuis une URL au format https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/\[NomPays\].png.
+
 ### Routes (1 pt)
 
 #### GET/GET all
@@ -56,10 +60,10 @@ Pour le microservice ms-countries on peut ajouter un pays avec createCountry, ou
 - createCountry : http://localhost/countries/ + body
   - body :
   ```json
-    {
-    "nom" : "nom",
-    "url" : "url"
-    }
+  {
+    "nom": "nom",
+    "url": "url"
+  }
   ```
 - createAllCountry : http://localhost/countries/all + body
   - Le body doit être de la forme :

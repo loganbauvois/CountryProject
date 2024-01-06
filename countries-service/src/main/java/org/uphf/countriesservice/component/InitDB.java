@@ -9,6 +9,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import org.uphf.countriesservice.controller.CountryController;
 import org.uphf.countriesservice.dto.CountryDto;
+import org.uphf.countriesservice.dto.CountryPostDto;
 import org.uphf.countriesservice.entities.Country;
 import org.uphf.countriesservice.repository.CountryRepository;
 
@@ -37,7 +38,7 @@ public class InitDB implements ApplicationRunner {
             }
             ObjectMapper objectMapper = new ObjectMapper();
 
-            List<CountryDto> countries = Arrays.asList(objectMapper.readValue(file, CountryDto[].class));
+            List<CountryPostDto> countries = Arrays.asList(objectMapper.readValue(file, CountryPostDto[].class));
 
             countryController.addCountries(countries);
         }

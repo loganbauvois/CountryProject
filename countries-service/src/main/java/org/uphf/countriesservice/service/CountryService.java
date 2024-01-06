@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.uphf.countriesservice.dto.CountryDto;
+import org.uphf.countriesservice.dto.CountryPostDto;
 import org.uphf.countriesservice.entities.Country;
 import lombok.RequiredArgsConstructor;
 import org.uphf.countriesservice.exception.NoContent;
@@ -20,13 +21,13 @@ public class CountryService {
     private final CountryRepository countryRepository;
     private final CountryMapper countryMapper;
     private final RestTemplate restTemplate = new RestTemplate();
-    public Country create(CountryDto request) {
+    public Country create(CountryPostDto request) {
         final Country country = countryMapper.toEntity(request);
 
         return countryRepository.insert(country);
     }
 
-    public List<Country> createAll(List<CountryDto> request) {
+    public List<Country> createAll(List<CountryPostDto> request) {
         final List<Country> temp = new ArrayList<>();
         request.forEach(x -> temp.add(countryMapper.toEntity(x)));
         return this.countryRepository.insert(temp);

@@ -1,0 +1,12 @@
+com/ProjectUPHF/BackFlagUserService/repository/UserRepository.class
+com/ProjectUPHF/BackFlagUserService/entity/User$UserBuilder.class
+com/ProjectUPHF/BackFlagUserService/entity/User.class
+com/ProjectUPHF/BackFlagUserService/BackFlagUserServiceApplication.class
+com/ProjectUPHF/BackFlagUserService/api/response/UserResponse.class
+com/ProjectUPHF/BackFlagUserService/api/response/UserResponse$UserResponseBuilder.class
+com/ProjectUPHF/BackFlagUserService/api/dto/UserDto$UserDtoBuilder.class
+com/ProjectUPHF/BackFlagUserService/api/dto/UserDto.class
+com/ProjectUPHF/BackFlagUserService/service/UserService.class
+com/ProjectUPHF/BackFlagUserService/mapper/UserMapper.class
+com/ProjectUPHF/BackFlagUserService/controller/UserController.class
+com/ProjectUPHF/BackFlagUserService/api/request/UserCreationRequest.class

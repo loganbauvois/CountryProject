@@ -3,6 +3,7 @@ package org.uphf.countriesservice.controller;
 import org.bson.types.ObjectId;
 import org.springframework.web.bind.annotation.*;
 import org.uphf.countriesservice.dto.CountryDto;
+import org.uphf.countriesservice.dto.CountryPostDto;
 import org.uphf.countriesservice.entities.Country;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -44,7 +45,7 @@ public class CountryController {
             @ApiResponse(
                 responseCode = "201",
                 description = "Response if the country was successfully created",
-                content = @Content(mediaType = "application/json", schema = @Schema(allOf = CountryDto.class))
+                content = @Content(mediaType = "application/json", schema = @Schema(allOf = CountryPostDto.class))
             ),
             @ApiResponse(
                 responseCode = "400",
@@ -53,8 +54,8 @@ public class CountryController {
             )
         }
     )
-    public ResponseEntity<CountryDto> addCountry(@Parameter(description = "Infos du pays à ajouter") @Valid @RequestBody CountryDto request){
-        if (request.getId() == null && /*request.getCapitale() != null &&*/ request.getNom() != null && request.getUrl() != null){
+    public ResponseEntity<CountryDto> addCountry(@Parameter(description = "Infos du pays à ajouter") @Valid @RequestBody CountryPostDto request){
+        if (/*request.getCapitale() != null &&*/ request.getNom() != null && request.getUrl() != null){
             final Country country = countryService.create(request);
             final CountryDto dto = countryMapper.toDto(country);
             return ResponseEntity.status(HttpStatus.CREATED).body(dto);
@@ -71,7 +72,7 @@ public class CountryController {
                     @ApiResponse(
                             responseCode = "201",
                             description = "Response if all the countries were successfully created",
-                            content = @Content(mediaType = "application/json", schema = @Schema(allOf = CountryDto.class))
+                            content = @Content(mediaType = "application/json", schema = @Schema(allOf = CountryPostDto.class))
                     ),
                     @ApiResponse(
                             responseCode = "400",
@@ -80,8 +81,8 @@ public class CountryController {
                     )
             }
     )
-    public ResponseEntity<List<CountryDto>> addCountries(@Parameter(description = "Liste d'Infos des pays à ajouter") @Valid @RequestBody List<CountryDto> request) {
-        if (request.stream().allMatch(x -> x.getId() == null /*&& x.getCapitale() != null */&& x.getNom() != null && x.getUrl() != null)) {
+    public ResponseEntity<List<CountryDto>> addCountries(@Parameter(description = "Liste d'Infos des pays à ajouter") @Valid @RequestBody List<CountryPostDto> request) {
+        if (request.stream().allMatch(x -> /*x.getCapitale() != null &&*/ x.getNom() != null && x.getUrl() != null)) {
             final List<Country> countries = countryService.createAll(request);
             final List<CountryDto> dto = countries.stream().map(countryMapper::toDto).toList();
             return ResponseEntity.status(HttpStatus.CREATED).body(dto);
@@ -125,7 +126,7 @@ public class CountryController {
                     @ApiResponse(
                             responseCode = "200",
                             description = "If the arguments are correct",
-                            content = @Content(mediaType = "application/json", schema = @Schema(allOf = CountryDto.class))
+                            content = @Content(mediaType = "application/json", schema = @Schema(allOf = Boolean.class))
                     ),
                     @ApiResponse(
                             responseCode = "400",

@@ -1,0 +1,560 @@
+{
+	"info": {
+		"_postman_id": "3d7dac8c-448f-43e0-ac82-cf3019e129f1",
+		"name": "TP Spring docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31400921"
+	},
+	"item": [
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "Create country",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nom\": \"Mon pays imaginaire\",\n    \"url\": \"https://http.dog/405.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/countries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create countries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"nom\" : \"Andorre\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Andorre.png\"\n  },\n  {\n    \"nom\" : \"Émirats arabes unis\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Émirats%20arabes%20unis.png\"\n  },\n  {\n    \"nom\" : \"Afghanistan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Afghanistan.png\"\n  },\n  {\n    \"nom\" : \"Antigua-et-Barbuda\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Antigua-et-Barbuda.png\"\n  },\n  {\n    \"nom\" : \"Albanie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Albanie.png\"\n  },\n  {\n    \"nom\" : \"Arménie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Arménie.png\"\n  },\n  {\n    \"nom\" : \"Angola\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Angola.png\"\n  },\n  {\n    \"nom\" : \"Argentine\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Argentine.png\"\n  },\n  {\n    \"nom\" : \"Autriche\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Autriche.png\"\n  },\n  {\n    \"nom\" : \"Australie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Australie.png\"\n  },\n  {\n    \"nom\" : \"Azerbaïdjan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Azerbaïdjan.png\"\n  },\n  {\n    \"nom\" : \"Bosnie-Herzégovine\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bosnie-Herzégovine.png\"\n  },\n  {\n    \"nom\" : \"Barbade\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Barbade.png\"\n  },\n  {\n    \"nom\" : \"Bangladesh\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bangladesh.png\"\n  },\n  {\n    \"nom\" : \"Belgique\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Belgique.png\"\n  },\n  {\n    \"nom\" : \"Burkina Faso\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Burkina%20Faso.png\"\n  },\n  {\n    \"nom\" : \"Bulgarie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bulgarie.png\"\n  },\n  {\n    \"nom\" : \"Bahreïn\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bahreïn.png\"\n  },\n  {\n    \"nom\" : \"Burundi\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Burundi.png\"\n  },\n  {\n    \"nom\" : \"Bénin\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bénin.png\"\n  },\n  {\n    \"nom\" : \"Brunéi\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Brunéi.png\"\n  },\n  {\n    \"nom\" : \"Bolivie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bolivie.png\"\n  },\n  {\n    \"nom\" : \"Brésil\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Brésil.png\"\n  },\n  {\n    \"nom\" : \"Bahamas\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bahamas.png\"\n  },\n  {\n    \"nom\" : \"Bhoutan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bhoutan.png\"\n  },\n  {\n    \"nom\" : \"Botswana\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Botswana.png\"\n  },\n  {\n    \"nom\" : \"Biélorussie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Biélorussie.png\"\n  },\n  {\n    \"nom\" : \"Belize\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Belize.png\"\n  },\n  {\n    \"nom\" : \"Canada\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Canada.png\"\n  },\n  {\n    \"nom\" : \"République démocratique du Congo\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20démocratique%20du%20Congo.png\"\n  },\n  {\n    \"nom\" : \"République centrafricaine\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20centrafricaine.png\"\n  },\n  {\n    \"nom\" : \"République du Congo\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20du%20Congo.png\"\n  },\n  {\n    \"nom\" : \"Suisse\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suisse.png\"\n  },\n  {\n    \"nom\" : \"Côte d'Ivoire\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Côte%20d'Ivoire.png\"\n  },\n  {\n    \"nom\" : \"Chili\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chili.png\"\n  },\n  {\n    \"nom\" : \"Cameroun\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cameroun.png\"\n  },\n  {\n    \"nom\" : \"Chine\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chine.png\"\n  },\n  {\n    \"nom\" : \"Colombie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Colombie.png\"\n  },\n  {\n    \"nom\" : \"Costa Rica\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Costa%20Rica.png\"\n  },\n  {\n    \"nom\" : \"Cuba\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cuba.png\"\n  },\n  {\n    \"nom\" : \"Cap-Vert\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cap-Vert.png\"\n  },\n  {\n    \"nom\" : \"Chypre\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chypre.png\"\n  },\n  {\n    \"nom\" : \"Tchéquie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tchéquie.png\"\n  },\n  {\n    \"nom\" : \"Allemagne\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Allemagne.png\"\n  },\n  {\n    \"nom\" : \"Djibouti\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Djibouti.png\"\n  },\n  {\n    \"nom\" : \"Danemark\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Danemark.png\"\n  },\n  {\n    \"nom\" : \"Dominique\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Dominique.png\"\n  },\n  {\n    \"nom\" : \"République dominicaine\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20dominicaine.png\"\n  },\n  {\n    \"nom\" : \"Algérie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Algérie.png\"\n  },\n  {\n    \"nom\" : \"Équateur\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Équateur.png\"\n  },\n  {\n    \"nom\" : \"Estonie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Estonie.png\"\n  },\n  {\n    \"nom\" : \"Égypte\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Égypte.png\"\n  },\n  {\n    \"nom\" : \"Érythrée\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Érythrée.png\"\n  },\n  {\n    \"nom\" : \"Espagne\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Espagne.png\"\n  },\n  {\n    \"nom\" : \"Éthiopie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Éthiopie.png\"\n  },\n  {\n    \"nom\" : \"Finlande\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Finlande.png\"\n  },\n  {\n    \"nom\" : \"Fidji\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Fidji.png\"\n  },\n  {\n    \"nom\" : \"France\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/France.png\"\n  },\n  {\n    \"nom\" : \"Gabon\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Gabon.png\"\n  },\n  {\n    \"nom\" : \"Royaume-Uni\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Royaume-Uni.png\"\n  },\n  {\n    \"nom\" : \"Grenade\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Grenade.png\"\n  },\n  {\n    \"nom\" : \"Géorgie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Géorgie.png\"\n  },\n  {\n    \"nom\" : \"Ghana\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ghana.png\"\n  },\n  {\n    \"nom\" : \"Gambie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Gambie.png\"\n  },\n  {\n    \"nom\" : \"Guinée\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée.png\"\n  },\n  {\n    \"nom\" : \"Guinée équatoriale\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée%20équatoriale.png\"\n  },\n  {\n    \"nom\" : \"Grèce\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Grèce.png\"\n  },\n  {\n    \"nom\" : \"Guatemala\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guatemala.png\"\n  },\n  {\n    \"nom\" : \"Guinée-Bissau\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée-Bissau.png\"\n  },\n  {\n    \"nom\" : \"Guyana\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guyana.png\"\n  },\n  {\n    \"nom\" : \"Honduras\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Honduras.png\"\n  },\n  {\n    \"nom\" : \"Croatie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Croatie.png\"\n  },\n  {\n    \"nom\" : \"Haïti\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Haïti.png\"\n  },\n  {\n    \"nom\" : \"Hongrie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Hongrie.png\"\n  },\n  {\n    \"nom\" : \"Indonésie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Indonésie.png\"\n  },\n  {\n    \"nom\" : \"Irlande\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Irlande.png\"\n  },\n  {\n    \"nom\" : \"Israël\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Israël.png\"\n  },\n  {\n    \"nom\" : \"Inde\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Inde.png\"\n  },\n  {\n    \"nom\" : \"Irak\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Irak.png\"\n  },\n  {\n    \"nom\" : \"Iran\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Iran.png\"\n  },\n  {\n    \"nom\" : \"Islande\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Islande.png\"\n  },\n  {\n    \"nom\" : \"Italie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Italie.png\"\n  },\n  {\n    \"nom\" : \"Jamaïque\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Jamaïque.png\"\n  },\n  {\n    \"nom\" : \"Jordanie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Jordanie.png\"\n  },\n  {\n    \"nom\" : \"Japon\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Japon.png\"\n  },\n  {\n    \"nom\" : \"Kenya\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kenya.png\"\n  },\n  {\n    \"nom\" : \"Kirghizistan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kirghizistan.png\"\n  },\n  {\n    \"nom\" : \"Cambodge\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cambodge.png\"\n  },\n  {\n    \"nom\" : \"Kiribati\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kiribati.png\"\n  },\n  {\n    \"nom\" : \"Comores\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Comores.png\"\n  },\n  {\n    \"nom\" : \"Saint-Christophe-et-Niévès\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Christophe-et-Niévès.png\"\n  },\n  {\n    \"nom\" : \"Corée du Nord\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Corée%20du%20Nord.png\"\n  },\n  {\n    \"nom\" : \"Corée du Sud\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Corée%20du%20Sud.png\"\n  },\n  {\n    \"nom\" : \"Koweït\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Koweït.png\"\n  },\n  {\n    \"nom\" : \"Kazakhstan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kazakhstan.png\"\n  },\n  {\n    \"nom\" : \"Laos\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Laos.png\"\n  },\n  {\n    \"nom\" : \"Liban\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Liban.png\"\n  },\n  {\n    \"nom\" : \"Sainte-Lucie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sainte-Lucie.png\"\n  },\n  {\n    \"nom\" : \"Liechtenstein\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Liechtenstein.png\"\n  },\n  {\n    \"nom\" : \"Sri Lanka\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sri%20Lanka.png\"\n  },\n  {\n    \"nom\" : \"Libéria\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Libéria.png\"\n  },\n  {\n    \"nom\" : \"Lesotho\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lesotho.png\"\n  },\n  {\n    \"nom\" : \"Lituanie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lituanie.png\"\n  },\n  {\n    \"nom\" : \"Luxembourg\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Luxembourg.png\"\n  },\n  {\n    \"nom\" : \"Lettonie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lettonie.png\"\n  },\n  {\n    \"nom\" : \"Libye\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Libye.png\"\n  },\n  {\n    \"nom\" : \"Maroc\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maroc.png\"\n  },\n  {\n    \"nom\" : \"Monaco\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Monaco.png\"\n  },\n  {\n    \"nom\" : \"Moldavie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Moldavie.png\"\n  },\n  {\n    \"nom\" : \"Monténégro\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Monténégro.png\"\n  },\n  {\n    \"nom\" : \"Madagascar\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Madagascar.png\"\n  },\n  {\n    \"nom\" : \"Macédoine du Nord\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Macédoine%20du%20Nord.png\"\n  },\n  {\n    \"nom\" : \"Mali\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mali.png\"\n  },\n  {\n    \"nom\" : \"Myanmar\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Myanmar.png\"\n  },\n  {\n    \"nom\" : \"Mongolie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mongolie.png\"\n  },\n  {\n    \"nom\" : \"Mauritanie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mauritanie.png\"\n  },\n  {\n    \"nom\" : \"Malte\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malte.png\"\n  },\n  {\n    \"nom\" : \"Maurice\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maurice.png\"\n  },\n  {\n    \"nom\" : \"Maldives\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maldives.png\"\n  },\n  {\n    \"nom\" : \"Malawi\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malawi.png\"\n  },\n  {\n    \"nom\" : \"Mexique\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mexique.png\"\n  },\n  {\n    \"nom\" : \"Malaisie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malaisie.png\"\n  },\n  {\n    \"nom\" : \"Mozambique\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mozambique.png\"\n  },\n  {\n    \"nom\" : \"Namibie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Namibie.png\"\n  },\n  {\n    \"nom\" : \"Niger\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Niger.png\"\n  },\n  {\n    \"nom\" : \"Nigéria\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nigéria.png\"\n  },\n  {\n    \"nom\" : \"Nicaragua\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nicaragua.png\"\n  },\n  {\n    \"nom\" : \"Pays-Bas\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pays-Bas.png\"\n  },\n  {\n    \"nom\" : \"Norvège\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Norvège.png\"\n  },\n  {\n    \"nom\" : \"Népal\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Népal.png\"\n  },\n  {\n    \"nom\" : \"Nauru\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nauru.png\"\n  },\n  {\n    \"nom\" : \"Nouvelle-Zélande\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nouvelle-Zélande.png\"\n  },\n  {\n    \"nom\" : \"Oman\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Oman.png\"\n  },\n  {\n    \"nom\" : \"Panama\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Panama.png\"\n  },\n  {\n    \"nom\" : \"Pérou\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pérou.png\"\n  },\n  {\n    \"nom\" : \"Papouasie-Nouvelle-Guinée\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Papouasie-Nouvelle-Guinée.png\"\n  },\n  {\n    \"nom\" : \"Philippines\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Philippines.png\"\n  },\n  {\n    \"nom\" : \"Pakistan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pakistan.png\"\n  },\n  {\n    \"nom\" : \"Pologne\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pologne.png\"\n  },\n  {\n    \"nom\" : \"Portugal\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Portugal.png\"\n  },\n  {\n    \"nom\" : \"Palaos\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Palaos.png\"\n  },\n  {\n    \"nom\" : \"Paraguay\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Paraguay.png\"\n  },\n  {\n    \"nom\" : \"Qatar\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Qatar.png\"\n  },\n  {\n    \"nom\" : \"Roumanie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Roumanie.png\"\n  },\n  {\n    \"nom\" : \"Serbie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Serbie.png\"\n  },\n  {\n    \"nom\" : \"Russie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Russie.png\"\n  },\n  {\n    \"nom\" : \"Rwanda\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Rwanda.png\"\n  },\n  {\n    \"nom\" : \"Arabie saoudite\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Arabie%20saoudite.png\"\n  },\n  {\n    \"nom\" : \"Îles Salomon\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Îles%20Salomon.png\"\n  },\n  {\n    \"nom\" : \"Seychelles\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Seychelles.png\"\n  },\n  {\n    \"nom\" : \"Soudan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Soudan.png\"\n  },\n  {\n    \"nom\" : \"Suède\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suède.png\"\n  },\n  {\n    \"nom\" : \"Singapour\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Singapour.png\"\n  },\n  {\n    \"nom\" : \"Slovénie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Slovénie.png\"\n  },\n  {\n    \"nom\" : \"Slovaquie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Slovaquie.png\"\n  },\n  {\n    \"nom\" : \"Sierra Leone\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sierra%20Leone.png\"\n  },\n  {\n    \"nom\" : \"Saint-Marin\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Marin.png\"\n  },\n  {\n    \"nom\" : \"Sénégal\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sénégal.png\"\n  },\n  {\n    \"nom\" : \"Somalie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Somalie.png\"\n  },\n  {\n    \"nom\" : \"Suriname\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suriname.png\"\n  },\n  {\n    \"nom\" : \"Soudan du Sud\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Soudan%20du%20Sud.png\"\n  },\n  {\n    \"nom\" : \"Sao Tomé-et-Principe\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sao%20Tomé-et-Principe.png\"\n  },\n  {\n    \"nom\" : \"Salvador\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Salvador.png\"\n  },\n  {\n    \"nom\" : \"Syrie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Syrie.png\"\n  },\n  {\n    \"nom\" : \"Eswatini\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Eswatini.png\"\n  },\n  {\n    \"nom\" : \"Tchad\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tchad.png\"\n  },\n  {\n    \"nom\" : \"Togo\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Togo.png\"\n  },\n  {\n    \"nom\" : \"Thaïlande\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Thaïlande.png\"\n  },\n  {\n    \"nom\" : \"Tadjikistan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tadjikistan.png\"\n  },\n  {\n    \"nom\" : \"Timor-Leste\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Timor-Leste.png\"\n  },\n  {\n    \"nom\" : \"Turkménistan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Turkménistan.png\"\n  },\n  {\n    \"nom\" : \"Tunisie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tunisie.png\"\n  },\n  {\n    \"nom\" : \"Tonga\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tonga.png\"\n  },\n  {\n    \"nom\" : \"Turquie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Turquie.png\"\n  },\n  {\n    \"nom\" : \"Trinité-et-Tobago\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Trinité-et-Tobago.png\"\n  },\n  {\n    \"nom\" : \"Tanzanie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tanzanie.png\"\n  },\n  {\n    \"nom\" : \"Ukraine\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ukraine.png\"\n  },\n  {\n    \"nom\" : \"Ouganda\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ouganda.png\"\n  },\n  {\n    \"nom\" : \"États-Unis d'Amérique\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/États-Unis%20d'Amérique.png\"\n  },\n  {\n    \"nom\" : \"Uruguay\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Uruguay.png\"\n  },\n  {\n    \"nom\" : \"Ouzbékistan\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ouzbékistan.png\"\n  },\n  {\n    \"nom\" : \"Saint-Vincent-et-les-Grenadines\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Vincent-et-les-Grenadines.png\"\n  },\n  {\n    \"nom\" : \"Venezuela\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Venezuela.png\"\n  },\n  {\n    \"nom\" : \"Vietnam\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Vietnam.png\"\n  },\n  {\n    \"nom\" : \"Vanuatu\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Vanuatu.png\"\n  },\n  {\n    \"nom\" : \"Samoa\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Samoa.png\"\n  },\n  {\n    \"nom\" : \"Yémen\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Yémen.png\"\n  },\n  {\n    \"nom\" : \"Afrique du Sud\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Afrique%20du%20Sud.png\"\n  },\n  {\n    \"nom\" : \"Zambie\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Zambie.png\"\n  },\n  {\n    \"nom\" : \"Zimbabwe\",\n    \"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Zimbabwe.png\"\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/countries/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"countries",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get answer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/countries/reponse?id=65993abd43a0945a609c01ee&nom=Andorre&username=ZambieDu59&score=15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"countries",
+								"reponse"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "65993abd43a0945a609c01ee",
+									"description": "ID de la question"
+								},
+								{
+									"key": "nom",
+									"value": "Andorre",
+									"description": "Réponse donnée"
+								},
+								{
+									"key": "username",
+									"value": "ZambieDu59",
+									"description": "username du joueur"
+								},
+								{
+									"key": "score",
+									"value": "15",
+									"description": "Score actuel du joueur"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/countries/question",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"countries",
+								"question"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Requêtes concernant le ms-countries"
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"ZambieDu59aa\",\n    \"password\": \"Lusak@@@\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Users/ZambieDu59",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users",
+								"ZambieDu59"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"ZambieDu59\",\n    \"password\": \"Lusak@@\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check ID/PW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Users/ZambieDu59/Lusak@@",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users",
+								"ZambieDu59",
+								"Lusak@@"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get score",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Users/score?username=ZambieDu59aa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users",
+								"score"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "ZambieDu59aa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update score",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Users/scoreUpdate?username=ZambieDu59aa&score=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users",
+								"scoreUpdate"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "ZambieDu59aa"
+								},
+								{
+									"key": "score",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get classement top10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/Users/classement",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Users",
+								"classement"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Requêtes concernant le ms-user"
+		},
+		{
+			"name": "PostOne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\" : \"Zambie\",\n    \"capitale\" : \"Lusaka\",\n    \"url\": \"http://oui.com/\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostMany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"nom\" : \"Andorre\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Andorre.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Émirats arabes unis\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Émirats%20arabes%20unis.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Afghanistan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Afghanistan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Antigua-et-Barbuda\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Antigua-et-Barbuda.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Albanie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Albanie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Arménie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Arménie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Angola\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Angola.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Argentine\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Argentine.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Autriche\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Autriche.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Australie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Australie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Azerbaïdjan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Azerbaïdjan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bosnie-Herzégovine\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bosnie-Herzégovine.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Barbade\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Barbade.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bangladesh\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bangladesh.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Belgique\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Belgique.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Burkina Faso\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Burkina%20Faso.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bulgarie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bulgarie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bahreïn\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bahreïn.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Burundi\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Burundi.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bénin\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bénin.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Brunéi\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Brunéi.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bolivie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bolivie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Brésil\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Brésil.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bahamas\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bahamas.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Bhoutan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Bhoutan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Botswana\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Botswana.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Biélorussie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Biélorussie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Belize\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Belize.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Canada\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Canada.png\"\n\t},\n\t{\n\t\t\"nom\" : \"République démocratique du Congo\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20démocratique%20du%20Congo.png\"\n\t},\n\t{\n\t\t\"nom\" : \"République centrafricaine\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20centrafricaine.png\"\n\t},\n\t{\n\t\t\"nom\" : \"République du Congo\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20du%20Congo.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Suisse\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suisse.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Côte d'Ivoire\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Côte%20d'Ivoire.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Chili\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chili.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Cameroun\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cameroun.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Chine\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chine.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Colombie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Colombie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Costa Rica\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Costa%20Rica.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Cuba\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cuba.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Cap-Vert\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cap-Vert.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Chypre\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Chypre.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Tchéquie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tchéquie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Allemagne\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Allemagne.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Djibouti\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Djibouti.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Danemark\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Danemark.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Dominique\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Dominique.png\"\n\t},\n\t{\n\t\t\"nom\" : \"République dominicaine\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/République%20dominicaine.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Algérie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Algérie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Équateur\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Équateur.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Estonie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Estonie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Égypte\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Égypte.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Érythrée\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Érythrée.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Espagne\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Espagne.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Éthiopie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Éthiopie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Finlande\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Finlande.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Fidji\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Fidji.png\"\n\t},\n\t{\n\t\t\"nom\" : \"France\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/France.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Gabon\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Gabon.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Royaume-Uni\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Royaume-Uni.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Grenade\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Grenade.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Géorgie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Géorgie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Ghana\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ghana.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Gambie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Gambie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Guinée\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Guinée équatoriale\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée%20équatoriale.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Grèce\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Grèce.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Guatemala\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guatemala.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Guinée-Bissau\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guinée-Bissau.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Guyana\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Guyana.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Honduras\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Honduras.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Croatie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Croatie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Haïti\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Haïti.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Hongrie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Hongrie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Indonésie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Indonésie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Irlande\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Irlande.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Israël\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Israël.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Inde\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Inde.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Irak\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Irak.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Iran\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Iran.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Islande\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Islande.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Italie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Italie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Jamaïque\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Jamaïque.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Jordanie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Jordanie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Japon\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Japon.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Kenya\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kenya.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Kirghizistan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kirghizistan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Cambodge\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Cambodge.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Kiribati\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kiribati.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Comores\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Comores.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Saint-Christophe-et-Niévès\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Christophe-et-Niévès.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Corée du Nord\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Corée%20du%20Nord.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Corée du Sud\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Corée%20du%20Sud.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Koweït\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Koweït.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Kazakhstan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Kazakhstan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Laos\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Laos.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Liban\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Liban.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Sainte-Lucie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sainte-Lucie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Liechtenstein\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Liechtenstein.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Sri Lanka\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sri%20Lanka.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Libéria\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Libéria.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Lesotho\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lesotho.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Lituanie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lituanie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Luxembourg\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Luxembourg.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Lettonie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Lettonie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Libye\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Libye.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Maroc\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maroc.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Monaco\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Monaco.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Moldavie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Moldavie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Monténégro\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Monténégro.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Madagascar\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Madagascar.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Macédoine du Nord\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Macédoine%20du%20Nord.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Mali\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mali.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Myanmar\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Myanmar.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Mongolie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mongolie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Mauritanie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mauritanie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Malte\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malte.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Maurice\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maurice.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Maldives\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Maldives.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Malawi\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malawi.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Mexique\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mexique.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Malaisie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Malaisie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Mozambique\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Mozambique.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Namibie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Namibie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Niger\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Niger.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Nigéria\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nigéria.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Nicaragua\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nicaragua.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Pays-Bas\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pays-Bas.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Norvège\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Norvège.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Népal\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Népal.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Nauru\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nauru.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Nouvelle-Zélande\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Nouvelle-Zélande.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Oman\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Oman.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Panama\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Panama.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Pérou\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pérou.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Papouasie-Nouvelle-Guinée\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Papouasie-Nouvelle-Guinée.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Philippines\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Philippines.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Pakistan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pakistan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Pologne\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Pologne.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Portugal\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Portugal.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Palaos\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Palaos.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Paraguay\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Paraguay.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Qatar\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Qatar.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Roumanie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Roumanie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Serbie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Serbie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Russie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Russie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Rwanda\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Rwanda.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Arabie saoudite\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Arabie%20saoudite.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Îles Salomon\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Îles%20Salomon.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Seychelles\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Seychelles.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Soudan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Soudan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Suède\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suède.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Singapour\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Singapour.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Slovénie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Slovénie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Slovaquie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Slovaquie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Sierra Leone\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sierra%20Leone.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Saint-Marin\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Marin.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Sénégal\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sénégal.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Somalie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Somalie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Suriname\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Suriname.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Soudan du Sud\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Soudan%20du%20Sud.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Sao Tomé-et-Principe\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Sao%20Tomé-et-Principe.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Salvador\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Salvador.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Syrie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Syrie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Eswatini\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Eswatini.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Tchad\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tchad.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Togo\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Togo.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Thaïlande\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Thaïlande.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Tadjikistan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tadjikistan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Timor-Leste\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Timor-Leste.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Turkménistan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Turkménistan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Tunisie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tunisie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Tonga\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tonga.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Turquie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Turquie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Trinité-et-Tobago\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Trinité-et-Tobago.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Tanzanie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Tanzanie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Ukraine\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ukraine.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Ouganda\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ouganda.png\"\n\t},\n\t{\n\t\t\"nom\" : \"États-Unis d'Amérique\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/États-Unis%20d'Amérique.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Uruguay\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Uruguay.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Ouzbékistan\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Ouzbékistan.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Saint-Vincent-et-les-Grenadines\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Saint-Vincent-et-les-Grenadines.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Venezuela\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Venezuela.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Vietnam\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Vietnam.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Vanuatu\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Vanuatu.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Samoa\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Samoa.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Yémen\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Yémen.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Afrique du Sud\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Afrique%20du%20Sud.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Zambie\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Zambie.png\"\n\t},\n\t{\n\t\t\"nom\" : \"Zimbabwe\",\n\t\t\"url\" : \"https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/Zimbabwe.png\"\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/countries/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"countries",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Question",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/countries/question?id=123&nom=Afghanistan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"countries",
+						"question"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						},
+						{
+							"key": "nom",
+							"value": "Afghanistan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reponse",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/countries/reponse?id=6596b3ddc06d3454d5aae707&nom=Bahamas&username=oui&score=301",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"countries",
+						"reponse"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6596b3ddc06d3454d5aae707"
+						},
+						{
+							"key": "nom",
+							"value": "Bahamas"
+						},
+						{
+							"key": "username",
+							"value": "oui"
+						},
+						{
+							"key": "score",
+							"value": "301"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"oui\",\n    \"password\":\"non\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Users/scoreUpdate?username=oui&score=300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Users",
+						"scoreUpdate"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "oui"
+						},
+						{
+							"key": "score",
+							"value": "300"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Users/score?username=a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Users",
+						"score"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
