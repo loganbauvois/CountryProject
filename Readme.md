@@ -21,11 +21,11 @@ Il y a un troisième composant front qui sert de consumer pour les back, et il e
 
 ### Connexion à la DB (0,5 pt)
 
-La base de donnée mongo s'éxecute sur le port 27017, elle est directement lié à nos deux microservices via les configuration dans les _application.yml_.
+La base de données mongo s'exécute sur le port 27017, elle est directement lié à nos deux microservices via les configuration dans les _application.yml_.
 
 Si les micro-services sont lancés depuis un container Docker, et donc si la variable DBHOST est renseignée dans l'environnement, la connexion s'effectue vers mongodb:// ; sinon vers localhost.
 
-**Concernant le remplissage de la base de données**, toutes les images ont été récupérées depuis un repo github : https://github.com/djaiss/mapsicon. Seuls manquent Tuvalu, les îles Marshall, et la Micronésie aux 193 pays reconnus indépendants par l'ONU. Ces images ont été pour chacunes extraites à l'aide d'un script Python, et réupload sur un dépôt github : https://github.com/Taumicron/CountriesShape.
+**Concernant le remplissage de la base de données**, toutes les images ont été récupérées depuis un repo GitHub : https://github.com/djaiss/mapsicon. Seuls manquent Tuvalu, les îles Marshall, et la Micronésie aux 193 pays reconnus indépendants par l'ONU. Ces images ont été pour chacunes extraites à l'aide d'un script Python, et réupload sur un dépôt github : https://github.com/Taumicron/CountriesShape.
 
 Ainsi, chaque image est accessible depuis une URL au format https://raw.githubusercontent.com/Taumicron/CountriesShape/main/Pays/\[NomPays\].png.
 
@@ -33,7 +33,7 @@ Ainsi, chaque image est accessible depuis une URL au format https://raw.githubus
 
 #### GET/GET all
 
-Il est possible de faire un getAllUsers dans le microservices ms-user les requêtes :
+Il est possible d'effectuer un getAllUsers dans le microservices ms-user les requêtes :
 
 - getAll : http://localhost/Users
 
