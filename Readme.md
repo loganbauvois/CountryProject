@@ -1,5 +1,7 @@
 # Compte rendu TP composent
 
+Lien de notre Github : https://github.com/loganbauvois/CountryProject (notamment pour voir le résultat des Github Actions)
+
 ## Backend (12pts)
 
 ### Structure (2 pts)
