@@ -1,4 +1,7 @@
-# Compte rendu TP composent
+# Compte rendu TP composant
+
+BAUVOIS Logan, CARVALHO Anthony, LORTHIOIR Théo
+Groupe Zambie M2 TNSID 2023-2024
 
 Lien de notre Github : https://github.com/loganbauvois/CountryProject (notamment pour voir le résultat des Github Actions)
 
