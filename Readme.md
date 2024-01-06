@@ -144,7 +144,7 @@ La github action se base sur une image d'Ubuntu récente et :
 - Pull l'image "Registry" pour créer un repository local, et run cette image sur le port 5000
 - Retag puis push les images ms-user, ms-countries et front sur le repository port 5000.
 
-Ce CI/CD ne sert à rien dans les faits, puisque le repository local est détruit directement à la fin de l'exécution, mais il permet effectivement de build et push une image.
+Ce CI/CD ne sert à rien dans les faits, puisque le repository local est détruit directement à la fin de l'exécution, mais il permet effectivement de build et push une image comme demandé.
 
 ### Optimisation (0,5pt)
 
@@ -186,22 +186,25 @@ Ainsi avec simplement `docker-compose up` on a besoin de rien faire d'autre. La 
 
 ### Documentation (1 pt)
 
-C'est ici même.
+C'est ici même, mais aussi dans les swaggers.
+
+Une collection Postman est également mise à disposition.
 
 ### Parcours fonctionnel (2 pt)
 
 1. Ouvrir un terminal dans le répertoire CountryProject
-2. Éxecuter la commande `docker-compose up`
+2. Éxecuter la commande `docker-compose up` si les projets Maven des micro-services ont été compilés et packagés. Sinon, il faut exécuter la commande `mvn package` dans les dossiers Back-Flag-User-Service et countries-service.</br>
+   Le script runAll.sh permet également de lancer `docker-compose up`, en compilant et packageant au préalable les 2 micro-services.
 3. Ouvrir http://localhost:4200/ dans un navigateur (testé sur Chrome, Firefox, Edge et Safari)
 4. S'inscrire avec un username et un password
 5. Se connecter avec ces même informations
 6. Jouer !
 
    1. Vous voyez la forme d'un pays
-   2. Entrez le nom que vous pensez (Selectionez le ans la liste des propositions pour qu'il soit reconnu)
+   2. Entrez le nom que vous pensez (Sélectionnez-le dans la liste des propositions pour qu'il soit reconnu)
    3. Validez, si vous avez bon vous gagnez 1 point sinon vous revenez à 0
    4. Votre meilleur score est enregistré
-   5. Dans classement (au haut au centre) vous voyez les 10 meilleurs joueurs et leur score
+   5. Dans classement (en haut au centre) vous voyez les 10 meilleurs joueurs et leur score
    6. Vous pouvez modifier votre username et password avec le bouton modifier en haut à droite.
 
       _Si vous voulez tricher, l'URL contenant notamment le nom du pays s'affiche dans la console JavaScript, et il est possible de clic droit/copier l'adresse de l'image._
